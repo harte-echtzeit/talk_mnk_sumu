@@ -1,0 +1,102 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_THEME: moon
+#+OPTIONS: timestamp:nil toc:1 num:nil
+#+REVEAL_INIT_OPTIONS: slideNumber:true
+#+REVEAL_EXTRA_SCRIPT_SRC: https://unpkg.com/@strudel/embed@latest https://unpkg.com/hydra-synth
+:END:
+
+
+#+TITLE: Quelloffene Musik - let's code a beat
+#+AUTHOR: harte echtzeit
+#+DATE: <2024-09-02 Mo>
+
+
+# * test hydra
+#+REVEAL_HTML:<script> var hydra = new Hydra({ detectAudio: false }) osc(4, 0.1, 1.2).out() </script>
+* Was ist live coding?
+** allgemein
+debugging als Kunstform...
+- direkte Ausgabe von Musik, Visuals oder physischer Aktion (z.B. MIDI) als Ziel
+- type >> interpret >> action
+- Kulturtechnik, kein Genre
+- radiakle Offenheit > keine Geheimnisse vor dem Publikum
+*** Beispiel Musik
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/ezSdPIKkp98?si=-Owr7uipGuBTJfHO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*** Beispiel Visuals
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/ql31mN1EXlw?si=uqJuFuyyYU75aFj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*** Beispiel Tanz
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/hoV01_P6PGw?si=m192IJXerFtMoaDa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+** Algorave
+- ein wesentliches Genre -> Techno mit Code
+- ca. 10 Jahre alt
+- TOPLAP-Manifesto ist hacker-freundlich
+  - "Obscurantism is dangerous. Show us your screens."
+  - "Programs are instruments that can change themselves."
+- [[https://tidalcycles.org/docs/around_tidal/toplap_manifesto/][link]] 
+** Quelloffenheit auf allen Ebenen
+- tools -> z.B. Tidal Cycles, Strudel, Hydra, P5Js, 
+- code -> viele Performances auf github u.ä.
+- Live Performance
+- Austausch zwischen Künstler*innen (vor Ort und im Web)
+* Musik machen
+** Tidal Cycles
+Eine Haskell-basierte live coding Sprache
+#+BEGIN_SRC haskell
+   d1 $ fast 1
+  $ s "bd sd bd sd"
+  # gain 0.9
+  # room 0.4
+#+END_SRC
+- sehr kompakt und gut live zu spielen
+- braucht Softwaresysnthesizer als Backend (typisch supercollider)
+- große Bibiliothek aus freien Samples und Synthesizern verfügbar
+** Strudel
+- JavaScript-Variante von TC
+- läuft im Browser mit WebAudio als Backend
+- gut für den Einstieg -> gute Visualisierungen und keine Installation
+#+REVEAL_HTML:<iframe src="https://strudel.cc/#c291bmQoIltiZCBzZCBiZCBzZF0sIGhoKjgiKS5ldmVyeSgyLCB4PT54LnJvb20oIjAuNCIpKS5fcGlhbm9yb2xsKHtsYWJlbHM6MX0p" width="900" height="200"></iframe>
+** Hydra
+- Visuals live coding
+- js-basiert, Schnittstellen zu OSC, MIDI, Audio vorhanden
+#+REVEAL_HTML:<iframe src="https://hydra.ojack.xyz/?sketch_id=khoparzi_1" width="900" height="400"></iframe>
+* Gravitationswellen
+** Was?
+- Störungen in der Raumzeit durch die Beschleunigung großer Massen
+- extrem kleine Effekte --> große Laser-Interferometer zur Detektion nötig
+
+#+BEGIN_EXPORT html
+<img src="./pics/Wavy.gif" width="40%"> <img src="./pics/LIGO_simplified.svg" width="40%">
+#+END_EXPORT
+
+#+REVEAL_HTML:<div> <font size="2"> [credit 1: NASA/JPL - <a rel="nofollow" class="external free" href="http://lisa.jpl.nasa.gov/popups/ripples.html">http://lisa.jpl.nasa.gov/popups/ripples.html</a><a rel="nofollow" class="external free" href="http://lisa.jpl.nasa.gov/IMAGES/wavy.gif">http://lisa.jpl.nasa.gov/IMAGES/wavy.gif</a>, Gemeinfrei, <a href="https://commons.wikimedia.org/w/index.php?curid=186327">Link</a></font>
+
+#+REVEAL_HTML:<font size="2"> credit 2: <a href="//commons.wikimedia.org/wiki/User:Menner" title="User:Menner">Menner</a> - <span class="int-own-work" lang="de">Eigenes Werk</span> , based on <a rel="nofollow" class="external free" href="https://www.ligo.caltech.edu/page/ligos-ifo">https://www.ligo.caltech.edu/page/ligos-ifo</a>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46947503">Link</a></font> <div> <font size="2"> [credit 1: NASA/JPL - <a rel="nofollow" class="external free" href="http://lisa.jpl.nasa.gov/popups/ripples.html">http://lisa.jpl.nasa.gov/popups/ripples.html</a><a rel="nofollow" class="external free" href="http://lisa.jpl.nasa.gov/IMAGES/wavy.gif">http://lisa.jpl.nasa.gov/IMAGES/wavy.gif</a>, Gemeinfrei, <a href="https://commons.wikimedia.org/w/index.php?curid=186327">Link</a></font>
+
+#+REVEAL_HTML:<font size="2">, credit 2: <a href="//commons.wikimedia.org/wiki/User:Menner" title="User:Menner">Menner</a> - <span class="int-own-work" lang="de">Eigenes Werk</span> , based on <a rel="nofollow" class="external free" href="https://www.ligo.caltech.edu/page/ligos-ifo">https://www.ligo.caltech.edu/page/ligos-ifo</a>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46947503">Link</a></font> </div>
+
+
+** Wie wird daraus Musik?
+#+ATTR_HTML: :width 50% :align_center
+[[./pics/LIGO_measurement_of_gravitational_waves.svg]]
+#+REVEAL_HTML:<font size="2"><p><a href="https://commons.wikimedia.org/wiki/File:LIGO_measurement_of_gravitational_waves.svg#/media/Datei:LIGO_measurement_of_gravitational_waves.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/LIGO_measurement_of_gravitational_waves.svg" alt="LIGO measurement of gravitational waves.svg" height="422" width="499"></a><br>Von B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration) — full list at the end of the article - <a rel="nofollow" class="external free" href="http://physics.aps.org/featured-article-pdf/10.1103/PhysRevLett.116.061102">http://physics.aps.org/featured-article-pdf/10.1103/PhysRevLett.116.061102</a> . See also <a rel="nofollow" class="external text" href="https://github.com/minrk/ligo-binder">the associated Jupyter notebook</a>., <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46987868">Link</a></p></font>
+
+- Werbung: [[https://callitanythingrecords.bandcamp.com/album/ji-k-kan][Ji Kū Kan]]
+  
+** let's do techno in 5 minutes!
+* Links und Refs
+- [[https://tidalcycles.org/][Tidal Cycles]] (Prgrammiersprache Audio - haskell)
+- [[https://blog.toplap.org/][TOPLAP]] (the home of live coding - Organisation)
+- [[https://algorave.com/][ALGORAVE]] (Organisation)
+- [[https://hydra.ojack.xyz/][HYDRA]] (Prgrammiersprache Visuals - js)
+- [[https://strudel.cc/][Strudel]] (Programmiersprache Audio - js)
+- [[https://sonic-pi.net/][Sonic PI]] (Programmiersprache Audio - ruby)
+- [[https://github.com/Qirky/FoxDot][Foxdot]] (Programmiersprache Audio - python)
+- [[https://flok.cc][Flok]] (kollaborative Umgebung für Strudel, Hydra, Tidal, etc.)
+- [[https://github.com/toplap/awesome-livecoding][viele Links]]
+* Kontakt
+1. [[https://harte-echtzeit.com/][harte-echtzeit.com]]
+2. [[https://sonomu.club/@harte_echtzeit][mastodon]]
+3. [[https://github.com/harte-echtzeit][github]]
+4. [[https://www.instagram.com/harte_echtzeit/][instagram]]
+5. [[https://futur-aaa.com/][futur AAA festival]]
+

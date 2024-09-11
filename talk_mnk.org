@@ -1,0 +1,140 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_THEME: moon
+#+OPTIONS: timestamp:nil toc:nil num:nil
+#+REVEAL_INIT_OPTIONS: slideNumber:true
+#+REVEAL_EXTRA_SCRIPT_SRC: https://unpkg.com/@strudel/embed@latest https://unpkg.com/hydra-synth
+:END:
+
+
+#+TITLE: Software als Instrument
+#+AUTHOR: harte echtzeit
+#+DATE: 2024-09-12
+
+
+# * test hydra
+#+REVEAL_HTML:<script> var hydra = new Hydra({ detectAudio: false }) osc(4, 0.1, 1.2).out() </script>
+
+* Was ist live coding?
+** allgemein
+debugging als Kunstform...
+- {Text / code >> Interpreter >> Aktion} => Schleife
+- direkte Ausgabe von Musik, Visuals oder physischer Aktion (z.B. MIDI) als Ziel
+- Kulturtechnik, kein Genre
+- radiakle Offenheit => keine Geheimnisse vor dem Publikum
+*** Beispiel Musik
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/ezSdPIKkp98?si=-Owr7uipGuBTJfHO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*** Beispiel Visuals
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/ql31mN1EXlw?si=uqJuFuyyYU75aFj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*** Beispiel Tanz
+#+REVEAL_HTML:<iframe width="900" height="500" src="https://www.youtube.com/embed/hoV01_P6PGw?si=m192IJXerFtMoaDa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*** Beispiel Orchester
+#+REVEAL_HTML: <iframe width="900" height="500" src="https://www.youtube.com/embed/MC3dlf2vilA?si=VD_ttzyLwdz7vMaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+** COMMENT Algorave
+- ein wesentliches Genre -> Techno mit Code
+- ca. 10 Jahre alt
+- TOPLAP-Manifesto ist hacker-freundlich
+  - "Obscurantism is dangerous. Show us your screens."
+  - "Programs are instruments that can change themselves."
+- [[https://tidalcycles.org/docs/around_tidal/toplap_manifesto/][link]] 
+** COMMENT Quelloffenheit auf allen Ebenen
+- tools -> z.B. Tidal Cycles, Strudel, Hydra, P5Js, 
+- code -> viele Performances auf github u.ä.
+- Live Performance
+- Austausch zwischen Künstler*innen (vor Ort und im Web)
+* Musik machen
+** ein einfaches Beispiel
+- browser-basiertes Werkzeug /strudel.cc/
+- gut für den Einstieg -> gute Visualisierungen und keine Installation
+#+REVEAL_HTML:<iframe src="https://strudel.cc/#JDogc291bmQoIltiZCBzZCBiZCBzZF0sIGhoKjgiKS5ldmVyeSgyLCB4PT54LnJvb20oIjAuNCIpKS5nYWluKDAuNCkuX3BpYW5vcm9sbCh7bGFiZWxzOjF9KQoKCl8kOiBuKCI8MCAtMz4sIDIgNCA8WzYsOF0gWzcsOV0%2BIikKLnNjYWxlKCI8QzptYWpvciBEIDptaXhvbHlkaWFuPi80IikKLnNvdW5kKCJwaWFubyIpLmNwbSg2MCk%3D" width="900" height="200"></iframe>
+** COMMENT Tidal Cycles
+Eine Haskell-basierte live coding Sprache
+#+BEGIN_SRC haskell
+   d1 $ fast 1
+  $ s "bd sd bd sd"
+  # gain 0.9
+  # room 0.4
+#+END_SRC
+- sehr kompakt und gut live zu spielen
+- braucht Softwaresysnthesizer als Backend (typisch supercollider)
+- große Bibiliothek aus freien Samples und Synthesizern verfügbar
+** COMMENT Hydra
+- Visuals live coding
+- js-basiert, Schnittstellen zu OSC, MIDI, Audio vorhanden
+#+REVEAL_HTML:<iframe src="https://hydra.ojack.xyz/?sketch_id=khoparzi_1" width="900" height="400"></iframe>
+* Was ist ein Instrument
+
+** Klangkörper vs Schnittstelle
+- laut Wikipedia "Ein Musikinstrument ... ist ein Gegenstand, der mit dem Ziel angefertigt wurde ..., um Musik zu erzeugen."
+- Vertiefung:
+  - Klangkörper/-erzeuger: ist der eigentliche Tonerzeuger
+  - Schnittstelle: ist der Zugang zum Klangerzeuger
+  - Musiker*in: ist meist der Grund, dass sich ergibt Klangkörper + Schnittstelle = Musik
+- BILDER
+** Instrumente
+#+BEGIN_EXPORT html
+<img src="./pics/German_maple_Violin.jpg" width="36%"> <img src="./pics/Steveporcaro_toto.jpg" width="25%"> <img src="./pics/wiki_lc_screen.png" width="33%">
+#+END_EXPORT
+
+
+Von <a href="//commons.wikimedia.org/wiki/User:Pianoplonkers" title="User:Pianoplonkers">Pianoplonkers</a> - <span class="int-own-work" lang="de">Eigenes Werk</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9481815">Link</a>
+
+
+
+Von <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/">https://www.flickr.com/photos/jamesthephotographer/</a> - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/120916737/">https://www.flickr.com/photos/jamesthephotographer/120916737/</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1737148">Link</a>
+
+** Sprache/Notation vs Schnittstelle
++ Notation = typischerweise getrennt vom Instrument und abstrahiert es teilweise
++ Notation = deterministisch + gibt engen Rahmen (Interpretationsspielraum vorhanden)
+
++ Code abstrahiert Instrument und kann sogar mehrere Instrumente gleichzeitig spielen
++ Code = Sprache und Notation
++ Code =  nicht ausschließlich deterministisch + kann sich zur Laufzeit selbst verändern
++ **These:** Code/live coding = Schnittstelle = Sprache = Klangerzeuger (= Musiker)?
+
+** Symbiose
+#+REVEAL_HTML: <iframe width="900" height="500" src="https://www.youtube.com/embed/AnHR8NRnFwY?si=4QrDed7MeA6HVaos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Gravitationswellen
+** Was?
+- Störungen in der Raumzeit durch die Beschleunigung großer Massen
+- extrem kleine Effekte --> große Laser-Interferometer zur Detektion nötig
+
+#+BEGIN_EXPORT html
+<img src="./pics/Wavy.gif" width="40%"> <img src="./pics/LIGO_simplified.svg" width="40%">
+#+END_EXPORT
+
+#+REVEAL_HTML:<div> <font size="2"> [credit 1: <a rel="nofollow" class="external free" href="http://lisa.jpl.nasa.gov/popups/ripples.html">NASA/JPL</a></font>
+#+REVEAL_HTML:<font size="2">, credit 2: <a href="//commons.wikimedia.org/wiki/User:Menner" title="User:Menner">Menner</a> - <span class="int-own-work" lang="de">Eigenes Werk</span>, based on <a rel="nofollow" class="external free" href="https://www.ligo.caltech.edu/page/ligos-ifo">https://www.ligo.caltech.edu/page/ligos-ifo</a>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46947503">Link</a>]</font>
+** Wie wird daraus Musik?
+#+ATTR_HTML: :width 60% :align_center
+[[./pics/LIGO_measurement_of_gravitational_waves.svg]]
+#+REVEAL_HTML:<font size="2"> [credit: B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration) <a rel="nofollow" class="external free" href="http://physics.aps.org/featured-article-pdf/10.1103/PhysRevLett.116.061102">Link</a> . See also <a rel="nofollow" class="external text" href="https://github.com/minrk/ligo-binder">the associated Jupyter notebook</a>., <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46987868">Link</a>]</font>
+ 
+** kleines Beispiel extern...
+- Ansatz: Gravitationswellen als /field recordings/ bzw. Samples, die assoziationsfrei zu neuen Klangstrukturen zusammengesetzt werden => Inspiration durch /musique concrète/
+- vom Album [[https://callitanythingrecords.bandcamp.com/album/ji-k-kan][Ji Kū Kan]]
+
+** Zurück zur Musik
+- Konzert des Komponisten Thorsten Encke mit dem Ensemble /musica assoluta/ zur Vertonung von Gravitationswellen ([[https://www.musica-assoluta.de/kalender/im-relativen-jetzt/][Link]])
+- aktuell Gespräche über mögliche Kooperation
+#+ATTR_HTML: :width 25% :align_center
+[[./pics/encke_konzert.png]]
+  
+* Links und Refs
+** Programmiersprachen / Werkzeuge
+- [[https://tidalcycles.org/][Tidal Cycles]] (Programmiersprache Audio - haskell)
+- [[https://strudel.cc/][Strudel]] (Programmiersprache Audio - js)
+- [[https://sonic-pi.net/][Sonic PI]] (Programmiersprache Audio - ruby)
+- [[https://github.com/Qirky/FoxDot][Foxdot]] (Programmiersprache Audio - python)
+- [[https://hydra.ojack.xyz/][HYDRA]] (Prgrammiersprache Visuals - js)
+- [[https://flok.cc][Flok]] (kollaborative Umgebung für Strudel, Hydra, Tidal, etc.)
+** Organisationen und Weiterführendes
+- [[https://blog.toplap.org/][TOPLAP]] (the home of live coding - Organisation)
+- [[https://algorave.com/][ALGORAVE]] (Organisation rave-Genre)
+- [[https://github.com/toplap/awesome-livecoding][Kompendium mit Links]]
+* Kontakt
+1. [[https://harte-echtzeit.com/][harte-echtzeit.com]]
+2. [[https://sonomu.club/@harte_echtzeit][mastodon]]
+3. [[https://github.com/harte-echtzeit][github]]
+4. [[https://www.instagram.com/harte_echtzeit/][instagram]]
+5. [[https://futur-aaa.com/][futur AAA festival]]
+
