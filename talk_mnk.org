@@ -69,19 +69,11 @@ Eine Haskell-basierte live coding Sprache
   - Klangkörper/-erzeuger: ist der eigentliche Tonerzeuger
   - Schnittstelle: ist der Zugang zum Klangerzeuger
   - Musiker*in: ist meist der Grund, dass sich ergibt Klangkörper + Schnittstelle = Musik
-- BILDER
 ** Instrumente
 #+BEGIN_EXPORT html
 <img src="./pics/German_maple_Violin.jpg" width="36%"> <img src="./pics/Steveporcaro_toto.jpg" width="25%"> <img src="./pics/wiki_lc_screen.png" width="33%">
 #+END_EXPORT
-
-
-Von <a href="//commons.wikimedia.org/wiki/User:Pianoplonkers" title="User:Pianoplonkers">Pianoplonkers</a> - <span class="int-own-work" lang="de">Eigenes Werk</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9481815">Link</a>
-
-
-
-Von <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/">https://www.flickr.com/photos/jamesthephotographer/</a> - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/120916737/">https://www.flickr.com/photos/jamesthephotographer/120916737/</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1737148">Link</a>
-
+#+REVEAL_HTML:<div> <font size="2"> [credit 1: <a href="//commons.wikimedia.org/wiki/User:Pianoplonkers" title="User:Pianoplonkers">Pianoplonkers</a> - <span class="int-own-work" lang="de">Eigenes Werk</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9481815">Link</a>, credit 2: <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/">https://www.flickr.com/photos/jamesthephotographer/</a> - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/jamesthephotographer/120916737/">flickr</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1737148">Link</a></font>
 ** Sprache/Notation vs Schnittstelle
 + Notation = typischerweise getrennt vom Instrument und abstrahiert es teilweise
 + Notation = deterministisch + gibt engen Rahmen (Interpretationsspielraum vorhanden)
@@ -113,7 +105,7 @@ Von <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/
 - Ansatz: Gravitationswellen als /field recordings/ bzw. Samples, die assoziationsfrei zu neuen Klangstrukturen zusammengesetzt werden => Inspiration durch /musique concrète/
 - vom Album [[https://callitanythingrecords.bandcamp.com/album/ji-k-kan][Ji Kū Kan]]
 
-** Zurück zur Musik
+** Kooperationen
 - Konzert des Komponisten Thorsten Encke mit dem Ensemble /musica assoluta/ zur Vertonung von Gravitationswellen ([[https://www.musica-assoluta.de/kalender/im-relativen-jetzt/][Link]])
 - aktuell Gespräche über mögliche Kooperation
 #+ATTR_HTML: :width 25% :align_center
